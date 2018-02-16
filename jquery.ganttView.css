@@ -141,9 +141,12 @@ div.ganttview-block div.ui-resizable-handle.ui-resizable-s {
 	bottom: -0;
 }
 
-/* bootstrap css fix - begin */ 
+/* bootstrap css fix - begin */
 /* Uncomment if bootstrap.js is giving you issues */
 /* https://github.com/thegrubbsian/jquery.ganttView/issues/29 */
+#ganttChart {
+    background-color: #fff;
+}
 #ganttChart div,
 #ganttChart div:before,
 #ganttChart div:after {
