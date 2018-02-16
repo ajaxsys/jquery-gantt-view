@@ -1,5 +1,5 @@
 /*
-jQuery.ganttView v.0.8.8
+jQuery.ganttView v.0.8.9
 Copyright (c) 2010 JC Grubbs - jc.grubbs@devmynd.com
 MIT License Applies
 */
@@ -23,17 +23,6 @@ behavior: {
 	onResize: function
 }
 */
-
-// to CommonJS
-(function (factory) {
-	if (typeof module === "object" && typeof module.expots === "object") {
-		// if 'module' is defined. Pass a jQuery object from module system.
-		module.exports = factory(require("jquery"));
-	} else {
-		// It works on browser. Pass a jQuery object from Global.
-		factory(jQuery);
-	}
-}(gantt));
 
 const gantt = function (jQuery) {
 	
@@ -404,3 +393,14 @@ const gantt = function (jQuery) {
     };
 
 };
+
+// to CommonJS
+(function (factory) {
+	if (typeof module === "object" && typeof module.expots === "object") {
+		// if 'module' is defined. Pass a jQuery object from module system.
+		module.exports = factory(require("jquery"));
+	} else {
+		// It works on browser. Pass a jQuery object from Global.
+		factory(jQuery);
+	}
+}(gantt));
